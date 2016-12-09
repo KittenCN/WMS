@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -269,6 +270,94 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Aspose.Cells.dll" />
+    <Content Include="bin\FastReport.dll" />
+    <Content Include="bin\FastReport.Web.dll" />
+    <Content Include="bin\Git.Framework.Cache.dll" />
+    <Content Include="bin\Git.Framework.Controller4.dll" />
+    <Content Include="bin\Git.Framework.DataTypes.dll" />
+    <Content Include="bin\Git.Framework.Email.dll" />
+    <Content Include="bin\Git.Framework.Encrypt.dll" />
+    <Content Include="bin\Git.Framework.Events.dll" />
+    <Content Include="bin\Git.Framework.Io.dll" />
+    <Content Include="bin\Git.Framework.Json.dll" />
+    <Content Include="bin\Git.Framework.Log.dll" />
+    <Content Include="bin\Git.Framework.MsSql.dll" />
+    <Content Include="bin\Git.Framework.ORM.dll" />
+    <Content Include="bin\Git.Framework.Resource.dll" />
+    <Content Include="bin\Git.Storage.Common.dll" />
+    <Content Include="bin\Git.Storage.Common.pdb" />
+    <Content Include="bin\Git.Storage.DataAccess.dll" />
+    <Content Include="bin\Git.Storage.DataAccess.pdb" />
+    <Content Include="bin\Git.Storage.Entity.dll" />
+    <Content Include="bin\Git.Storage.Entity.pdb" />
+    <Content Include="bin\Git.Storage.IDataAccess.dll" />
+    <Content Include="bin\Git.Storage.IDataAccess.pdb" />
+    <Content Include="bin\Git.Storage.Provider.dll" />
+    <Content Include="bin\Git.Storage.Provider.pdb" />
+    <Content Include="bin\Git.Storage.Web.dll" />
+    <Content Include="bin\Git.Storage.Web.pdb" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+    <Content Include="bin\Microsoft.Practices.ObjectBuilder.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\NPOI.dll" />
+    <Content Include="bin\NPOI.OOXML.dll" />
+    <Content Include="bin\NPOI.OpenXml4Net.dll" />
+    <Content Include="bin\NPOI.OpenXmlFormats.dll" />
+    <Content Include="bin\System.Net.Http.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\System.Net.Http.WebRequest.dll" />
+    <Content Include="bin\System.Net.Http.WebRequest.xml" />
+    <Content Include="bin\System.Net.Http.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\WebMatrix.Data.dll" />
+    <Content Include="bin\WebMatrix.Data.xml" />
+    <Content Include="bin\WebMatrix.WebData.dll" />
+    <Content Include="bin\WebMatrix.WebData.xml" />
+    <Content Include="bin\zh-Hans\System.Net.Http.Formatting.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Net.Http.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Net.Http.WebRequest.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Helpers.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Http.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Http.WebHost.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Mvc.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Optimization.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Razor.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.WebPages.Razor.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.WebPages.resources.dll" />
+    <Content Include="bin\zh-Hans\WebMatrix.Data.resources.dll" />
+    <Content Include="bin\zh-Hans\WebMatrix.WebData.resources.dll" />
+    <Content Include="DB\gitwms.sql" />
+    <Content Include="DB\JooWMS.mdf" />
+    <Content Include="DB\JooWMS_log.ldf">
+      <DependentUpon>JooWMS.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="install_lodop32.exe" />
     <Content Include="install_lodop64.exe" />
@@ -2008,6 +2097,7 @@
     <Content Include="Areas\Report\Views\Manager\Designer.cshtml" />
     <Content Include="Areas\Report\Views\Manager\Show.cshtml" />
     <Content Include="Areas\Report\Views\Manager\AddParam.cshtml" />
+    <None Include="bin\Git.Storage.Web.dll.config" />
     <None Include="Configs\Data\Database.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -2108,6 +2198,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Configs\Pages\Report-PagesManage.config" />
+    <Content Include="DB\JooWMS.bak" />
+    <Content Include="Log\20161209.log" />
     <None Include="Properties\PublishProfiles\WebSite.pubxml" />
     <Content Include="Views\Home\Welcome.cshtml" />
     <Content Include="Theme\plugins\Flexigrid\css\flexigrid.less" />
@@ -2126,6 +2218,16 @@
     <Content Include="Theme\content\report\template\出库单打印模板.frx" />
     <Content Include="Theme\content\report\入库单打印模板.frx" />
     <Content Include="Theme\content\report\出库单打印模板.frx" />
+    <Content Include="UploadFile\16958bb428874794aed01df1979d81c9.frx" />
+    <Content Include="UploadFile\2a13d99eae2b452a801711bee233dc4b.frl" />
+    <Content Include="UploadFile\5841ec09507747bf8805545bd7974f5b.frl" />
+    <Content Include="UploadFile\66ae8b56c65e4d58aa3ed598eb71a73e.frl" />
+    <Content Include="UploadFile\67b129846c5449e7b085be931139a346.frx" />
+    <Content Include="UploadFile\c8e48049012e4db7b3e72c9452af9c3a.frl" />
+    <Content Include="UploadFile\d8646bb7e2df4a90bbc28caaf57cb9cb.frl" />
+    <Content Include="UploadFile\df16a03c6b394c77a919aa7e6b1a6a6f.frx" />
+    <Content Include="UploadFile\f25f2f5e613c4007b39fd1cdeaa43283.frl" />
+    <Content Include="UploadFiles\库存清单报表20160614103350.xls" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Git.Storage.Common\Git.Storage.Common.csproj">
