@@ -353,11 +353,6 @@
     <Content Include="bin\zh-Hans\System.Web.WebPages.resources.dll" />
     <Content Include="bin\zh-Hans\WebMatrix.Data.resources.dll" />
     <Content Include="bin\zh-Hans\WebMatrix.WebData.resources.dll" />
-    <Content Include="DB\gitwms.sql" />
-    <Content Include="DB\JooWMS.mdf" />
-    <Content Include="DB\JooWMS_log.ldf">
-      <DependentUpon>JooWMS.mdf</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="install_lodop32.exe" />
     <Content Include="install_lodop64.exe" />
@@ -2198,7 +2193,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Configs\Pages\Report-PagesManage.config" />
-    <Content Include="DB\JooWMS.bak" />
     <Content Include="Log\20161209.log" />
     <None Include="Properties\PublishProfiles\WebSite.pubxml" />
     <Content Include="Views\Home\Welcome.cshtml" />
