@@ -89,6 +89,11 @@
     <Reference Include="Git.Framework.Resource">
       <HintPath>..\Lib\Git.Framework.Resource.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
       <HintPath>..\Lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
@@ -112,10 +117,39 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="NPOI, Version=2.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI.2.2.1\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\packages\NPOI.2.2.1\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\packages\NPOI.2.2.1\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\packages\NPOI.2.2.1\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -135,17 +169,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.WebRequest">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -313,46 +336,19 @@
     <Content Include="bin\NPOI.OpenXmlFormats.dll" />
     <Content Include="bin\System.Net.Http.dll" />
     <Content Include="bin\System.Net.Http.Formatting.dll" />
-    <Content Include="bin\System.Net.Http.Formatting.xml" />
     <Content Include="bin\System.Net.Http.WebRequest.dll" />
-    <Content Include="bin\System.Net.Http.WebRequest.xml" />
-    <Content Include="bin\System.Net.Http.xml" />
     <Content Include="bin\System.Web.Helpers.dll" />
-    <Content Include="bin\System.Web.Helpers.xml" />
     <Content Include="bin\System.Web.Http.dll" />
     <Content Include="bin\System.Web.Http.WebHost.dll" />
-    <Content Include="bin\System.Web.Http.WebHost.xml" />
-    <Content Include="bin\System.Web.Http.xml" />
     <Content Include="bin\System.Web.Mvc.dll" />
-    <Content Include="bin\System.Web.Mvc.xml" />
     <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\System.Web.Razor.dll" />
-    <Content Include="bin\System.Web.Razor.xml" />
     <Content Include="bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
     <Content Include="bin\System.Web.WebPages.dll" />
     <Content Include="bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.xml" />
-    <Content Include="bin\System.Web.WebPages.xml" />
     <Content Include="bin\WebGrease.dll" />
     <Content Include="bin\WebMatrix.Data.dll" />
-    <Content Include="bin\WebMatrix.Data.xml" />
     <Content Include="bin\WebMatrix.WebData.dll" />
-    <Content Include="bin\WebMatrix.WebData.xml" />
-    <Content Include="bin\zh-Hans\System.Net.Http.Formatting.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Net.Http.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Net.Http.WebRequest.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.Helpers.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.Http.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.Http.WebHost.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.Mvc.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.Optimization.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.Razor.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.WebPages.Razor.resources.dll" />
-    <Content Include="bin\zh-Hans\System.Web.WebPages.resources.dll" />
-    <Content Include="bin\zh-Hans\WebMatrix.Data.resources.dll" />
-    <Content Include="bin\zh-Hans\WebMatrix.WebData.resources.dll" />
     <Content Include="Global.asax" />
     <Content Include="install_lodop32.exe" />
     <Content Include="install_lodop64.exe" />
@@ -1826,6 +1822,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Report\Views\Shared\" />
+    <Folder Include="bin\zh-Hans\" />
     <Folder Include="Theme\plugins\jquery-file-upload\server\php\files\thumbnail\" />
   </ItemGroup>
   <ItemGroup>
@@ -2193,7 +2190,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Configs\Pages\Report-PagesManage.config" />
-    <Content Include="Log\20161209.log" />
     <None Include="Properties\PublishProfiles\WebSite.pubxml" />
     <Content Include="Views\Home\Welcome.cshtml" />
     <Content Include="Theme\plugins\Flexigrid\css\flexigrid.less" />
