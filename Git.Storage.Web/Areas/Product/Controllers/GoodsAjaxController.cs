@@ -23,6 +23,7 @@ using Git.Storage.Entity.Order;
 using Git.Storage.Provider.Order;
 using Git.Framework.Cache;
 using Git.Storage.Provider.Base;
+using Git.Storage.Entity.InStorage;
 
 namespace Git.Storage.Web.Areas.Product.Controllers
 {
@@ -353,6 +354,10 @@ namespace Git.Storage.Web.Areas.Product.Controllers
             if (sb.Length == 0)
             {
                 sb.Append("\n");
+            }
+            if(sb.Length==1)
+            {
+                
             }
             return Content(sb.ToString());
         }
