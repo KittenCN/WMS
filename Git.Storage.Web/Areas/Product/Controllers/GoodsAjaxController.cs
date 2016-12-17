@@ -355,10 +355,6 @@ namespace Git.Storage.Web.Areas.Product.Controllers
             {
                 sb.Append("\n");
             }
-            if(sb.Length==1)
-            {
-                
-            }
             return Content(sb.ToString());
         }
 

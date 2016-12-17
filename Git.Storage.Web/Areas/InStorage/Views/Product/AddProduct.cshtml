@@ -16,55 +16,56 @@
     @Html.Partial("_Title")
     @Html.Raw(ViewBag.CssFile)
     <script type="text/javascript">
-        function simulateKeyEvent(target,keyCode) {
+        //function simulateKeyEvent(target,keyCode) {
 
-            if (!target) {
-                alert("Target is not exist");
-            }
+        //    if (!target) {
+        //        alert("Target is not exist");
+        //    }
 
-            var customEvent = null;
-            var a = typeof document.createEvent;
+        //    var customEvent = null;
+        //    var a = typeof document.createEvent;
 
-            if (typeof document.createEvent == "function") {
-                try {
+        //    if (typeof document.createEvent == "function") {
+        //        try {
 
-                    //firefox
-                    customEvent = document.createEvent("KeyEvents");
-                    customEvent.initKeyEvent("keypress", true, true, window, false,
-                        false, false, false, keyCode, keyCode);
+        //            //firefox
+        //            customEvent = document.createEvent("KeyEvents");
+        //            customEvent.initKeyEvent("keypress", true, true, window, false,
+        //                false, false, false, keyCode, keyCode);
 
-                } catch (ex) {
+        //        } catch (ex) {
 
-                    document.write(ex);
-                }
-                target.dispatchEvent(customEvent);
+        //            document.write(ex);
+        //        }
+        //        target.dispatchEvent(customEvent);
 
-            } else if (document.createEventObject) { //IE
+        //    } else if (document.createEventObject) { //IE
 
-                customEvent = document.createEventObject();
+        //        customEvent = document.createEventObject();
 
-                customEvent.bubbles = true;
-                customEvent.cancelable = true;
-                customEvent.view = window;
-                customEvent.ctrlKey = false;
-                customEvent.altKey = false;
-                customEvent.shiftKey = false;
-                customEvent.metaKey = false;
-                customEvent.keyCode = keyCode;
+        //        customEvent.bubbles = true;
+        //        customEvent.cancelable = true;
+        //        customEvent.view = window;
+        //        customEvent.ctrlKey = false;
+        //        customEvent.altKey = false;
+        //        customEvent.shiftKey = false;
+        //        customEvent.metaKey = false;
+        //        customEvent.keyCode = keyCode;
 
-                target.fireEvent("onkeypress", customEvent);
+        //        target.fireEvent("onkeypress", customEvent);
 
-            } else {
-                document.write("This example is only demonstrating event simulation in firefox and IE.");
-            }
-        }
+        //    } else {
+        //        document.write("This example is only demonstrating event simulation in firefox and IE.");
+        //    }
+        //}
         var target = document.getElementById("txtBarCode");
         $('#txtBarCode').bind('keyup', function (event) {
             if (event.keyCode == "13") {
                 //回车执行查询
                 //$('#search_button').click();
-                simulateKeyEvent(target, 40);
-                simulateKeyEvent(target, 13);
+                //simulateKeyEvent(target, 40);
+                //simulateKeyEvent(target, 13);
+                
             }
         });
     </script>

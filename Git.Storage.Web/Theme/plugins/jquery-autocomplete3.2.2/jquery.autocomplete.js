@@ -79,7 +79,7 @@
             alert('Invalid parameter for jquery.Autocompleter, jQuery object with one element with INPUT tag expected');
             return;
         }
-        
+
         /**
          * Init and sanitize options
          */
@@ -469,6 +469,26 @@
             $li = $('<li>' + this.showResult(result.value, result.data) + '</li>');
             $li.data('value', result.value);
             $li.data('data', result.data);
+
+            //var self = this;
+            //$li.keydown(function (e) {
+            //    self.lastKeyPressed_ = e.keyCode;
+            //    switch (self.lastKeyPressed_) {
+            //        case 13: // return
+            //            var $this = $(this);
+            //            self.selectItem(0);
+            //            if (first === false) {
+            //                first = String(result.value);
+            //                $first = $li;
+            //                $li.addClass(this.options.firstItemClass);
+            //            }
+            //            if (i == numResults - 1) {
+            //                $li.addClass(this.options.lastItemClass);
+            //            }
+            //            break;
+            //    }
+            //});
+
             $li.click(function () {
                 var $this = $(this);
                 self.selectItem($this);
@@ -648,7 +668,7 @@
                 url: options
             };
         }
-        
+
         var o = $.extend({}, $.fn.autocomplete.defaults, options);
         return this.each(function () {
             var $this = $(this);
